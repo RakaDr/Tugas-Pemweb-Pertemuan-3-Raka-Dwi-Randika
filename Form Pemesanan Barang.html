@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pemesanan</title>
+    <style>
+      .upbtn {
+        display: block;
+        margin: 10px 0;
+        padding: 10px;
+        background-color: #ccc;
+        border: 2px solid #000;
+        text-align: center;
+        cursor: pointer;
+      }
+      .ttlhere {
+        float: right;
+        margin-right: 490px;
+        margin-top: -250px;
+      }
+      .dscrp {
+        float: right;
+        margin-right: 490px;
+        margin-top: -220px;
+      }
+      .an {
+        float: right;
+        margin-right: 490px;
+        margin-top: -130px;
+      }
+      .bank {
+        float: right;
+        margin-right: 490px;
+        margin-top: -100px;
+      }
+      .ah {
+        float: right;
+        margin-right: 490px;
+        margin-top: -70px;
+      }
+      .tr {
+        float: right;
+        margin-right: 490px;
+        margin-top: -40px;
+      }
+      .cbg {
+        float: right;
+        margin-right: 875px;
+        margin-top: -10px;
+      }
+      .stp {
+        float: right;
+        margin-right: 490px;
+        margin-top: 10px;
+      }
+      .stm {
+        float: right;
+        margin-right: 490px;
+        margin-top: 10px;
+      }
+      .gb {
+        float: right;
+        margin-right: 875px;
+        margin-top: 30px;
+      }
+      .teks {
+        position: relative;
+        margin-top: -150px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="formHasil.html" method="post">
+    <img src="https://placehold.co/350x350" alt="Placeholder image for upload" />
+    <input type="file" class="upbtn" name="ui"/>
+    
+      <div class="teks">
+        <div class="ttlhere">
+          <label for="title">Title Here :</label>
+          <input name="title" style="margin-left: 80px; width: 500px" id="title" type="text" placeholder="MacBook Air £800" />
+        </div>
+        <div class="dscrp">
+          <label for="description">Description :</label>
+          <textarea name="description"
+            style="margin-left: 72px"
+            cols="67"
+            rows="5"
+            placeholder=" Year : 2009
+ Model :
+ Condition : Mint"
+          ></textarea>
+        </div>
+        <div class="an">
+          <label for="account-number">Account Number :</label>
+          <input name="account-number" style="margin-left: 37px; width: 500px" id="account-number" type="text" placeholder="123-456-789-0" />
+        </div>
+        <div class="bank">
+          <label for="bank">Bank :</label>
+          <select name="bank" style="margin-left: 110px; width: 508px" id="bank">
+            <option>HSBC</option>
+            <option>BRI</option>
+            <option>BCA</option>
+          </select>
+        </div>
+        <div class="ah">
+          <label for="account-holder">Account Holder :</label>
+          <input name="account-holder" style="margin-left: 40px; width: 500px" id="account-holder" type="text" placeholder="Name Here" />
+        </div>
+        <div class="tr">
+          <label for="transaction">Transaction :</label>
+          <input name="transaction" style="margin-left: 68px; width: 500px" id="transaction" type="text" placeholder="1" />
+        </div>
+        <p style="float: right; margin-right: 720px; margin-top: -10px">* If the transaction is for 3 person, choose 3 from the drop-down list</p>
+        <div class="cbg">
+          <input name="send-to-mobile" id="send-to-mobile" type="checkbox" />
+          <label for="send-to-mobile">Send to Mobile Phone</label>
+          <input name="send-email" id="send-email" type="checkbox"  />
+          <label for="send-email">Send to Email</label>
+        </div>
+        <div class="stp">
+          <label for="send-to-mobile-phone">Send to Mobile Phone :</label>
+          <input name="send-to-mobile-phone" style="width: 500px" id="send-to-mobile-phone" type="text" placeholder="1234567890, 1234567891" />
+        </div>
+        <div class="stm">
+          <label for="send-to-email">Send to Email :</label>
+          <input name="send-to-email"style="margin-left: 51px; width: 500px" id="send-to-email" type="text" placeholder="mfmfm213@aston.ac.uk, fys_06@yahoo.com" />
+        </div>
+        <div class="gb">
+          <a href="formHasil.html">
+            <input type="submit" name="submit" value="Generate nbr link"/>
+          </a>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
